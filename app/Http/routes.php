@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'applicationController@index');
+Route::get('/vb', function () {
+    return view('application');
 });
+
+Route::get('/schooljaren', 'exampleController@index');
